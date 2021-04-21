@@ -7,7 +7,7 @@ using System.Reflection;
 using UnityEditor;
 using UnityEngine;
 
-public class ScriptableObjectWizzard : EditorWindow
+public class ScriptableObjectWizard : EditorWindow
 {
     [Header("Clic on the folder you want create the object")]
     public string path;
@@ -19,7 +19,7 @@ public class ScriptableObjectWizzard : EditorWindow
     [MenuItem("RA/ScriptableObjectWizzard")]
     static void Init()
     {
-        ScriptableObjectWizzard wizard = (ScriptableObjectWizzard)GetWindow(typeof(ScriptableObjectWizzard));
+        ScriptableObjectWizard wizard = (ScriptableObjectWizard)GetWindow(typeof(ScriptableObjectWizard));
 
         Type projectWindowUtilType = typeof(ProjectWindowUtil);
         MethodInfo getActiveFolderPath = projectWindowUtilType.GetMethod("GetActiveFolderPath", BindingFlags.Static | BindingFlags.NonPublic);
@@ -54,7 +54,7 @@ public class ScriptableObjectWizzard : EditorWindow
 
         foreach (Type so in aviableScriptableObjects)
         {
-            if (so.Name != typeof(ScriptableObjectWizzard).Name)
+            if (so.Name != typeof(ScriptableObjectWizard).Name)
             {
                 EditorGUILayout.BeginHorizontal();
 
