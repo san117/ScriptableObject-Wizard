@@ -18,7 +18,7 @@ public class MyScriptableObject : ScriptableObject
 }
 ```
 
-2- **Next go to "RA>ScriptableObject Wizard" in Unity menu.**
+2- **Next go to "RA>ScriptableObject Wizard" in Unity menu.**~
 ![](https://github.com/san117/ScriptableObject-Wizzard/blob/main/Tutorial_1.JPG?raw=true)
 
 3- In the Wizard Window you should be able to see the classes that derive from ScriptableObject
